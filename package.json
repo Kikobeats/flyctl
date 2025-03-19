@@ -20,6 +20,8 @@
     "url": "https://github.com/kikobeats/flyctl/issues"
   },
   "keywords": [
+    "fly",
+    "flyctl",
     "flyio"
   ],
   "dependencies": {
