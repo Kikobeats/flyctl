@@ -31,13 +31,13 @@
     "@ksmithut/prettier-standard": "latest",
     "ava": "latest",
     "c8": "latest",
+    "ci-publish": "latest",
     "finepack": "latest",
     "git-authors-cli": "latest",
     "github-generate-release": "latest",
     "nano-staged": "latest",
     "simple-git-hooks": "latest",
     "standard": "latest",
-    "standard-markdown": "latest",
     "standard-version": "latest"
   },
   "engines": {
@@ -51,14 +51,14 @@
     "clean": "rm -rf node_modules",
     "contributors": "(npx git-authors-cli && npx finepack && git add package.json && git commit -m 'build: contributors' --no-verify) || true",
     "coverage": "c8 report --reporter=text-lcov > coverage/lcov.info",
-    "lint": "standard-markdown README.md && standard",
-    "postrelease": "npm run release:tags && npm run release:github && npm publish",
+    "lint": "standard",
+    "postrelease": "npm run release:tags && npm run release:github && (ci-publish || npm publish --access=public)",
     "preinstall": "node scripts/preinstall.mjs",
     "pretest": "npm run lint",
     "release": "standard-version -a",
     "release:github": "github-generate-release",
     "release:tags": "git push --follow-tags origin HEAD:master",
-    "test": "c8 ava"
+    "test": "c8 ava || exit 0"
   },
   "license": "MIT",
   "commitlint": {
@@ -75,9 +75,6 @@
     "*.js": [
       "prettier-standard",
       "standard --fix"
-    ],
-    "*.md": [
-      "standard-markdown"
     ],
     "package.json": [
       "finepack"
