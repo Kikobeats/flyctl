@@ -6,7 +6,7 @@ const { green } = require('util').inspect.colors
 module.exports = (appName, { verbose } = {}) => {
   const print = verbose
     ? args =>
-      console.log(`\x1b[${green[0]}m$ fly ${args.join(' ')}\x1b[${green[1]}m`)
+      console.log(`\x1b[${green[0]}m$ fly ${args.join(' ')}\x1b[${green[1]}m\n`)
     : () => {}
 
   const fly = (cmd, spawnOpts) => {

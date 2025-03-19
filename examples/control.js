@@ -20,4 +20,4 @@ if (FLY_PROCESS_GROUP !== undefined) {
   cmd += ` ${machinesIds.join(' ')}`
 }
 
-fly(cmd)
+fly.stream(cmd)

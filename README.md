@@ -3,7 +3,7 @@
 ![Last version](https://img.shields.io/github/tag/kikobeats/flyctl.svg?style=flat-square)
 [![NPM Status](https://img.shields.io/npm/dm/flyctl.svg?style=flat-square)](https://www.npmjs.org/package/fly)
 
-> A convenient Node.js wrapper to interact with fly.io CLI.
+> A convenient Node.js wrapper to interact with [fly.io](https://fly.io/) CLI.
 
 ## Install
 
@@ -31,7 +31,7 @@ console.log(stdout)
 or pipe directly into your Node.js process using [`fly.stream()`](https://github.com/Kikobeats/flyctl#flystreamcmd):
 
 ```js
-fly.stream('scale logs')
+fly.stream('logs')
 ```
 
 Additionally, you can use [`fly.json()`](https://github.com/Kikobeats/flyctl#flyjsoncmd) to return a JSON payload of the command.
