@@ -47,7 +47,6 @@
     "node": ">= 20"
   },
   "files": [
-    "scripts",
     "src"
   ],
   "scripts": {
