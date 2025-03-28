@@ -26,7 +26,7 @@
   ],
   "dependencies": {
     "binary-version-check-cli": "~4.1.0",
-    "tinyspawn": "~1.4.0"
+    "tinyspawn": "~1.5.0"
   },
   "devDependencies": {
     "@commitlint/cli": "latest",
