@@ -2,7 +2,7 @@
   "name": "flyctl",
   "description": "A convenient Node.js wrapper to interact with fly.io",
   "homepage": "https://github.com/kikobeats/flyctl",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "exports": {
     ".": "./src/index.js"
   },
