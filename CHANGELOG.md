@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.1.0 (2025-03-30)
+
+
+### Features
+
+* add FLY_PATH env ([160f74f](https://github.com/kikobeats/flyctl/commit/160f74f12639a9d397d40ab50e71a48f9265467f))
+
 ### 1.0.5 (2025-03-28)
 
 ### 1.0.4 (2025-03-28)
