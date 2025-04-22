@@ -8,7 +8,7 @@ module.exports = (
   { verbose, binaryPath = process.env.FLY_PATH || 'fly' } = {}
 ) => {
   const print = verbose
-    ? args => console.log(`${styleText('green', `$ fly ${args.join(' ')}`)}\n`)
+    ? args => console.log(`${styleText('green', `$ ${binaryPath} ${args.join(' ')}`)}\n`)
     : () => {}
 
   const fly = (cmd, spawnOpts) => {
