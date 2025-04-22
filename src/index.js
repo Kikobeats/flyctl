@@ -5,7 +5,7 @@ const $ = require('tinyspawn')
 
 module.exports = (
   appName,
-  { verbose, flyPath = process.env.FLY_PATH || 'fly' } = {}
+  { verbose, binaryPath = process.env.FLY_PATH || 'fly' } = {}
 ) => {
   const print = verbose
     ? args => console.log(`${styleText('green', `$ fly ${args.join(' ')}`)}\n`)
@@ -14,7 +14,7 @@ module.exports = (
   const fly = (cmd, spawnOpts) => {
     const args = [...cmd.split(' '), '--app', appName]
     print(args)
-    return $(flyPath, args, spawnOpts)
+    return $(binaryPath, args, spawnOpts)
   }
 
   fly.stream = cmd => fly(cmd, { stdio: 'inherit' })

@@ -74,7 +74,7 @@ Default: `true`
 
 Print the raw fly command every time it's executed.
 
-##### flyPath
+##### binaryPath
 
 Type: `string`<br>
 Default: `process.env.FLY_PATH`
