@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.2.0 (2025-04-22)
+
+
+### Features
+
+* flyPath argument ([20c9a3b](https://github.com/kikobeats/flyctl/commit/20c9a3b7f62d845c18c5ff2248ebd1c78931ecb9))
+
 ## 1.1.0 (2025-03-30)
 
 
