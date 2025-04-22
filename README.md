@@ -74,6 +74,13 @@ Default: `true`
 
 Print the raw fly command every time it's executed.
 
+##### flyPath
+
+Type: `string`<br>
+Default: `process.env.FLY_PATH`
+
+It sets where is the `flyctl` binary path.
+
 ### fly(cmd, spawnOpts)
 
 It runs the command provided and buffer the output.
